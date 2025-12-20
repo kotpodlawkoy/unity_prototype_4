@@ -15,6 +15,7 @@ public class PlayerControllerX : MonoBehaviour
     public GameObject powerupIndicator;
     public int powerUpDuration = 5;
 
+    //private ParticleSystem sprintEffect;
     public ParticleSystem sprintEffect;
 
     private float normalStrength = 10; // how hard to hit enemy without powerup
@@ -23,6 +24,7 @@ public class PlayerControllerX : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
+        //sprintEffect = GameObject.Find ( "Sprint Effect" ).GetComponent < ParticleSystem > ();
         focalPoint = GameObject.Find("Focal Point");
     }
 
@@ -36,6 +38,10 @@ public class PlayerControllerX : MonoBehaviour
         {
             playerRb.AddForce ( focalPoint.transform.forward * sprintForce, ForceMode.Impulse );
             sprintEffect.Play ();
+        }
+        if ( Input.GetKeyUp ( KeyCode.Space ) )
+        {
+            sprintEffect.Stop ();
         }
         // Set powerup indicator position to beneath player
         powerupIndicator.transform.position = transform.position + new Vector3(0, -0.6f, 0);

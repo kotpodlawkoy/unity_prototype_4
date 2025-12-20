@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject bossPrefab;
     public GameObject [] powerupPrefabs;
     public float spawnRangeXandZ = 9f;
-    private int waveNumber = 5;
+    private int waveNumber = 1;
     private int currentEnemyCount;
 
     // Update is called once per frame
