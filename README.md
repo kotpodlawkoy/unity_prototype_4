@@ -8,7 +8,7 @@
   * Unity tool [kotpodlawkoy sln generator](https://github.com/kotpodlawkoy/kotpodlawkoy.sln.csproj.generator)
  
 # Ссылка на web build
-[поиграс](https://play.unity.com/en/games/48542dd2-2264-4597-97d1-70800251ae61/prototype4)
+[поиграс](https://play.unity.com/en/games/48542dd2-2264-4597-97d1-70800251ae61/prototype4) (**Нажмите Esc для выхода в главное меню**)
 
 # Проведённая работа
 * Была реализована 3D игра с видом сверху с **орбитальной камерой**, где надо выталкивать с башни другие шарики, при работе было проведены:
